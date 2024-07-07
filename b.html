@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Interface</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: url('08.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .container a {
+            display: block;
+            margin: 15px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: #1abc9c;
+            font-size: 1.2em;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background: #1abc9c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="login.jsp" target="main">Student Login</a>
+        <a href="logout.jsp" target="main">Student Logout</a>
+        <a href="facultylogin.jsp" target="main">Faculty Login</a>
+        <a href="facultylogout.jsp" target="main">Faculty Logout</a>
+        <a href="workingdays.jsp" target="main">Insert/Update Working Days</a>
+        <a href="details_admin.jsp" target="main">Details of Student</a>
+        <a href="deletestudent.jsp" target="main">Remove Student</a>
+        <a href="attinformation_admin.jsp" target="main">View Attendance from Date to Date</a>
+        <a href="report1.jsp" target="main">Generate Reports</a>
+        <a href="signout.jsp" target="main">Logout</a>
+    </div>
+</body>
+</html>
